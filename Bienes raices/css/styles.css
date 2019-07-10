@@ -9,6 +9,9 @@ body {
 }
 
 /*Globales*/
+img {
+  max-width: 100%;
+}
 .contenedor {
   max-width: 120rem; /** = 1200px **/
   margin: 0 auto;
@@ -42,6 +45,29 @@ h4 {
 
 .centrar-texto {
   text-align: center;
+}
+
+.d-block {
+  display: block !important;
+}
+
+/** Botones **/
+
+.boton {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: center;
+}
+.boton-amarillo {
+  background-color: #e08709;
+}
+.boton-verde {
+  background-color: #71b100;
 }
 
 /*Header*/
@@ -103,4 +129,67 @@ h4 {
 
 .icono h3 {
   text-transform: uppercase;
+}
+
+/** Anuncios**/
+
+.contenedor-anuncios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anuncio {
+  flex-basis: calc(33.3%-1rem);
+  border: 3px solid #f5f5f5;
+  background-color: #eeeeee;
+}
+
+.contenido-anuncio {
+  padding: 2rem;
+}
+.contenido-anuncio h3,
+.contenido-anuncio p {
+  margin: 1rem;
+}
+
+.precio {
+  color: #71b100;
+  font-weight: 700;
+}
+
+.iconos-caracteristicas{
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: space-evenly;
+}
+
+.iconos-caracteristicas li{
+  
+  display: flex;
+}
+.iconos-caracteristicas li img{
+  margin-right: 2rem;
+}
+.ver-todas {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/** contacto home **/
+.imagen-contacto {
+  background-image: url(../img/encuentra.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+
+}
+.contenido-contacto{
+  flex: 1;
+  color: white;
+}
+.contenido-contacto p{
+  font-size: 1.8rem;
 }
